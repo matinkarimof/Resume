@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رزومه | متین کریم‌اف</title>
+  <meta name="description" content="رزومه متین کریم‌اف، توسعه‌دهنده فرانت‌اند.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#top">MK<span>.</span>DEV</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="باز کردن منو">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">درباره من</a>
+        <a href="#experience">سوابق</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#education">تحصیلات</a>
+        <a href="#contact">تماس</a>
+      </nav>
+      <button class="btn btn-ghost btn-sm" id="printBtn" type="button">دانلود PDF</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" id="hero">
+      <p class="eyebrow" id="heroRole">&nbsp;</p>
+      <h1 class="glitch" id="heroName" data-text="">&nbsp;</h1>
+      <p class="hero-sub" id="heroSummary"></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact">شروع همکاری</a>
+        <a class="btn btn-outline" href="#projects">مشاهده پروژه‌ها</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">درباره من</h2>
+        <div class="about-grid">
+          <p id="aboutText"></p>
+          <div class="card info-card">
+            <dl>
+              <dt>ایمیل</dt><dd class="ltr" id="infoEmail"></dd>
+              <dt>نقش</dt><dd id="infoRole"></dd>
+              <dt>وضعیت</dt><dd class="status-on">آماده همکاری</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">سوابق کاری</h2>
+        <div class="timeline" id="experienceList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">مهارت‌ها</h2>
+        <div class="skills-grid" id="skillsList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">پروژه‌ها</h2>
+        <div class="projects-grid" id="projectsList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">تحصیلات</h2>
+        <div class="edu-list" id="educationList"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">تماس با من</h2>
+          <p class="muted">برای همکاری یا پرسش، پیام بگذارید یا از راه‌های زیر استفاده کنید.</p>
+          <a class="contact-email ltr" id="contactEmail" href="#"></a>
+          <div class="socials" id="socialsList"></div>
+        </div>
+
+        <form class="card contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cName">نام</label>
+            <input id="cName" name="name" type="text" maxlength="100" required autocomplete="name">
+            <small class="field-error" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="cEmail">ایمیل</label>
+            <input id="cEmail" name="email" type="email" maxlength="254" required autocomplete="email" class="ltr">
+            <small class="field-error" data-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="cMsg">پیام</label>
+            <textarea id="cMsg" name="message" rows="5" maxlength="2000" required></textarea>
+            <small class="field-error" data-for="message"></small>
+          </div>
+          <!-- فیلد تله برای ربات‌ها؛ کاربر آن را نمی‌بیند -->
+          <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary btn-block" type="submit" id="submitBtn">ارسال پیام</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> متین کریم‌اف</span>
+      <a href="#top" class="to-top">بالا ↑</a>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</body>
+</html>

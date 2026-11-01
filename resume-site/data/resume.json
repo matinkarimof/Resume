@@ -1,0 +1,67 @@
+{
+  "name": "متین کریم‌اف",
+  "name_latin": "Matin Karimov",
+  "role": "توسعه‌دهنده فرانت‌اند",
+  "summary": "توسعه‌دهنده فرانت‌اند با علاقه به ساخت رابط‌های کاربری سریع، واکنش‌گرا و جذاب. با HTML و CSS حرفه‌ای کار می‌کنم و در جاوااسکریپت و پایتون در حال پیشرفت هستم.",
+  "email": "Karimofmatin@gmail.com",
+  "socials": [
+    { "name": "telegram", "url": "https://t.me/YOUR_USERNAME", "icon": "telegram" },
+    { "name": "whatsapp", "url": "https://wa.me/YOUR_NUMBER", "icon": "whatsapp" },
+    { "name": "instagram", "url": "https://instagram.com/YOUR_USERNAME", "icon": "instagram" }
+  ],
+  "skills": [
+    { "name": "HTML & CSS", "level": 90 },
+    { "name": "JavaScript", "level": 60 },
+    { "name": "Python", "level": 65 },
+    { "name": "Bootstrap", "level": 70 }
+  ],
+  "experience": [
+    {
+      "title": "توسعه‌دهنده فرانت‌اند (فریلنسر)",
+      "company": "پروژه‌های مستقل",
+      "period": "2024 — اکنون",
+      "highlights": [
+        "طراحی و پیاده‌سازی صفحات معرفی و فروشگاهی واکنش‌گرا با HTML و CSS",
+        "بهبود سرعت بارگذاری صفحات با بهینه‌سازی تصاویر و کاهش فایل‌های اضافی",
+        "پیاده‌سازی قالب‌های آماده با Bootstrap برای کاهش زمان توسعه"
+      ]
+    },
+    {
+      "title": "کارآموز توسعه وب",
+      "company": "استودیو طراحی نمونه",
+      "period": "2023 — 2024",
+      "highlights": [
+        "همکاری در بازطراحی رابط کاربری چند وب‌سایت سازمانی",
+        "اصلاح باگ‌های نمایشی در مرورگرها و دستگاه‌های موبایل",
+        "مستندسازی کامپوننت‌ها و استانداردهای کدنویسی تیم"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "داشبورد مدیریت وظایف",
+      "description": "یک داشبورد تک‌صفحه‌ای برای ثبت و پیگیری وظایف با فیلتر، جستجو و ذخیره‌سازی محلی.",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "link": "#"
+    },
+    {
+      "name": "صفحه فروشگاه گیمینگ",
+      "description": "قالب فروشگاه با شبکه محصولات، سبد خرید ساده و طراحی واکنش‌گرا با تم نئونی.",
+      "tags": ["Bootstrap", "JavaScript"],
+      "link": "#"
+    },
+    {
+      "name": "API ساده یادداشت‌ها",
+      "description": "سرویس REST با پایتون برای ثبت و دریافت یادداشت‌ها، همراه با اعتبارسنجی ورودی.",
+      "tags": ["Python", "Flask", "SQLite"],
+      "link": "#"
+    }
+  ],
+  "education": [
+    {
+      "degree": "لیسانس کامپیوتر",
+      "school": "دانشگاه آزاد کرج",
+      "period": "2019 — 2023"
+    }
+  ]
+}
